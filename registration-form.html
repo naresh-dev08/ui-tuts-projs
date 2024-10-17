@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <h1>Register for Our Event</h1>
+    <p>Please fill out the form below to register for our upcoming event.</p>
+    <form action="/submit-registration" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email " id="email" required><br><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number." required><br><br>
+
+        <h2>Event Type</h2>
+        <input type="radio" name="event_type" id="webinar" value="webinar">
+        <label for="webinar">Webinar</label><br>
+
+        <input type="radio" name="event_type" id="workshop" value="workshop">
+        <label for="workshop">Workshop</label><br>
+
+        <input type="radio" name="event_type" id="conference" value="conference">
+        <label for="conference">Conference</label><br><br>
+
+        <h2>T-shirt Size</h2>
+        <label for="size">Select your T-shirt size:</label>
+        <select name="size" id="size">
+            <option value="small">small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">X-Large</option>
+        </select><br><br>
+
+        <h2>Additional Options</h2>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Subscribe to our newsletter</label><br>
+
+        <input type="checkbox" name="terms" id="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>
