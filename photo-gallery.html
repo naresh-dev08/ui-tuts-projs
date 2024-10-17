@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photo Gallery</title>
+    <!-- <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          gap: 10px;
+        }
+        .gallery img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+        .caption {
+          text-align: center;
+          margin-top: 5px;
+        }
+      </style> -->
+</head>
+<body>
+    <h1>My Photo Gallery</h1>
+    <div class="gallery">
+        <figure>
+<!-- How It Works:
+When the user clicks on the smaller image (image1.jpg), the browser will navigate to image1-large.jpg and open it in a new tab (due to target="_blank).
+The smaller image serves as a clickable link, and the user can view the larger image without losing their current place on the page. -->
+            <a href="https://onlinejpgtools.com/images/examples-onlinejpgtools/scenic-view-of-ocean.jpg" target="_blank">
+                <img src="https://img.freepik.com/free-photo/mount-mont-blanc-covered-snow-reflecting-water-evening-chamonix-france_181624-33408.jpg" alt="Description of image 1" width="200">
+            </a>
+            <figcaption class="caption">Image 1 Caption</figcaption>
+        </figure>
+        <figure>
+            <a href="https://plus.unsplash.com/premium_photo-1672423154405-5fd922c11af2?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmd8ZW58MHx8MHx8fDA%3D" target="_blank">
+                <img src="https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg" alt="Description of image 2" width="200">
+            </a>
+            <figcaption class="caption">Image 2 Caption</figcaption>
+        </figure>
+        <figure>
+            <a href="image3-large.jpg" target="_blank">
+                <img src="image3.jpg" alt="Description of image 3">
+            </a>
+            <figcaption class="caption">Image 3 Caption</figcaption>
+        </figure>
+        <!-- Add more images as needed -->
+    </div>
+</body>
+</html>
