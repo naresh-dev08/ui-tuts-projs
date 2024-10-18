@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page - Awesome Headphones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Awesome Headphones</h1>
-        <div>
-            <div>
+        <div class="product">
+            <div class="product-images">
                 <img src="https://blaupunktaudio.in/cdn/shop/products/em-01-wired-earphone-black-blaupunkt-india-1.png?v=1710484318" alt="Awesome Headphones" width="200">
             </div>
-            <div>
+            <div class="product-info">
                 <p>These headphones provide top-notch sound quality with noise cancellation features, perfect for audiophiles and frequent travelers alike.</p>
-                <span>&#8377;199.99</span>
+                <span class="price">&#8377;199.99</span>
                 <form>
-                    <div>
+                    <div class="form-group">
                         <label for="quantity">Quantity</label>
                         <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
                     </div>
@@ -36,12 +64,12 @@
             <h2>Related Products</h2>
             <div>
                 <div>
-                    <img src="" alt="Related Product 1">
-                    <p><a href="">Related Product 1</a></p>
+                    <img src="https://ae-pic-a1.aliexpress-media.com/kf/S845573edb71f4ac8874d3ad937cd475as/HIFI-Stereo-Earphones-Bluetooth-Headphone-Music-Headset-FM-and-Support-SD-Card-with-Mic-for-Mobile.jpg_640x640Q90.jpg_.webp" alt="Related Product 1" width="200">
+                    <p><a href="https://ae-pic-a1.aliexpress-media.com/kf/S845573edb71f4ac8874d3ad937cd475as/HIFI-Stereo-Earphones-Bluetooth-Headphone-Music-Headset-FM-and-Support-SD-Card-with-Mic-for-Mobile.jpg_640x640Q90.jpg_.webp">Related Product 1</a></p>
                 </div>
                 <div>
-                    <img src="related2.jpg" alt="Related Product 2">
-                    <p><a href="#">Related Product 2</a></p>
+                    <img src="https://blaupunktaudio.in/cdn/shop/files/em06-type-c-wired-earphone-black-blaupunkt-india-1.png?v=1723204384" alt="Related Product 2" width="200">
+                    <p><a href="https://blaupunktaudio.in/cdn/shop/files/em06-type-c-wired-earphone-black-blaupunkt-india-1.png?v=1723204384">Related Product 2</a></p>
                 </div>
             </div>
         </div>
