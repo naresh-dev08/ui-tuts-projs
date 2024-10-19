@@ -1,0 +1,24 @@
+/* Type selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    background-color: red;
+    color: aqua;
+}
+
+/* ID selector */
+#unique {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid green;
+}
+
+
+  
