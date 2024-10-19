@@ -1,0 +1,63 @@
+/* Type selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    background-color: red;
+    color: aqua;
+}
+
+/* ID selector */
+#unique {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 2px solid green;
+}
+
+/* Descendant Selector: selects all <span> inside <div> */
+div span {
+    color: red;
+}
+
+/* Child Selector: selects direct children <p> inside <div> */
+div > p {
+    font-weight: bold;
+}
+
+/* Adjacent Sibling Selector: selects the first <p> after an <h2> */
+h2 + p {
+    color: blue;
+}
+
+/* General Sibling Selector: selects all <p> siblings of <h3> */
+h3 ~ p {
+    color: purple;
+}
+
+/* Pseudo-Class :hover */
+a:hover {
+    text-decoration: overline;
+}
+
+/* nth-child Pseudo-Class */
+ul li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+/* Attribute Selector (Starts with 'https') */
+a[href="https"] {
+    color: green;
+}
+
+ /* Pseudo-Element ::before */
+ a + p::before {
+    content: "Important: ";
+    color: red;
+    font-weight: bold;
+ }
