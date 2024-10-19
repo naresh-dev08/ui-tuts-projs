@@ -29,7 +29,19 @@
             margin: 10px 0;
         }
         .form-group {
-            margin: 10px 0;
+            margin: 10px 0 ;
+        }
+        .related-products {
+            margin-top: 50px;
+        }
+        .related-products .grid {
+            display: grid;
+            grid-template-columns: repeat(aut0-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .related-products img {
+            width: 20%;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -48,21 +60,22 @@
                         <label for="quantity">Quantity</label>
                         <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
                     </div>
-                    <div>
+                    <div class="form-group">
                         <button type="submit">Add to Cart</button>
                     </div>
                 </form>
             </div>
         </div>
 
-        <div>
+        <div class="review">
             <h2>Review</h2>
             <p><strong>John Doe:</strong> ★★★★★ "Excellent product! Highly recommend!"</p>
             <p><strong>Jane Smith:</strong> ★★★★☆ "Great sound quality but a bit pricey."</p>
         </div>
-        <div>
+
+        <div class="related-products">
             <h2>Related Products</h2>
-            <div>
+            <div class="grid">
                 <div>
                     <img src="https://ae-pic-a1.aliexpress-media.com/kf/S845573edb71f4ac8874d3ad937cd475as/HIFI-Stereo-Earphones-Bluetooth-Headphone-Music-Headset-FM-and-Support-SD-Card-with-Mic-for-Mobile.jpg_640x640Q90.jpg_.webp" alt="Related Product 1" width="200">
                     <p><a href="https://ae-pic-a1.aliexpress-media.com/kf/S845573edb71f4ac8874d3ad937cd475as/HIFI-Stereo-Earphones-Bluetooth-Headphone-Music-Headset-FM-and-Support-SD-Card-with-Mic-for-Mobile.jpg_640x640Q90.jpg_.webp">Related Product 1</a></p>
