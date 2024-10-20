@@ -26,3 +26,28 @@
 .second {
     margin-top: 30px;
 }
+
+.relative-box {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    position: relative;
+    top: 20px; /* Moves the box 20px down */
+    left: 40px; /* Moves the box 40px to the right */
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+  }
+
+  .absolute-box {
+    position: absolute;
+    top: 50px;   /* 50px from the top of the container */
+    left: 50px;  /* 50px from the left of the container */
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+  }
