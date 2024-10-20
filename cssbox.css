@@ -26,3 +26,12 @@
 .second {
     margin-top: 30px;
 }
+
+.relative-box {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    position: relative;
+    top: 20px; /* Moves the box 20px down */
+    left: 40px; /* Moves the box 40px to the right */
+}
