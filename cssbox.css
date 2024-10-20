@@ -6,3 +6,23 @@
     margin: 30px;  /* Space outside the box */
     background-color: lightblue;  /* Background color */
 }
+
+.box-more {
+    width: 400px;
+    height: 150px;
+    padding: 20px; /* Space inside the box */
+    border: 5px solid red; /* Border */
+    margin: 50px; /* Auto centers the box horizontally */
+    background-color: cadetblue; /* Background color */
+    border-radius: 15px; /* Rounded corners */
+    box-sizing: border-box; /* Includes padding and border in the total width and height */
+    overflow: hidden; /* Content that overflows will be hidden */
+}
+
+.first {
+    margin-bottom: 20px;
+}
+
+.second {
+    margin-top: 30px;
+}
