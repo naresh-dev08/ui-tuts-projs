@@ -10,6 +10,8 @@
             width: 100px;
             height: 100px;
             background-color: red;
+            text-align: center;
+            line-height: 100px; /* Center the text vertically */
             z-index: 1; /* This element is behind box2 */
         }
 
@@ -17,14 +19,16 @@
             position: relative;
             width: 100px;
             height: 100px;
-            background-color: aqua;
-            margin-left: -50px;
+            background-color: blue;
+            text-align: center;
+            line-height: 100px; /* Center the text vertically */
+            margin-left: -50px; /* Overlap the red box */
             z-index: 2; /* This element is in front */
         }
     </style>
 </head>
 <body>
-    <div class="box1"> Box 1</div>
+    <div class="box1">Box 1</div>
     <div class="box2">Box 2</div>
 </body>
 </html>
