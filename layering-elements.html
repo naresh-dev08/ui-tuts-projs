@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layering Multiple Elements with Z-Index</title>
+    <style>
+        .layer1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            z-index: 1;
+        }
+
+        .layer2 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            z-index: 2;
+        }
+
+        .layer3 {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="layer1">Layer 1</div>
+    <div class="layer2">Layer 2</div>
+    <div class="layer3">Layer 3</div>
+</body>
+</html>
