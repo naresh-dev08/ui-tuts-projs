@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Contexts</title>
+    <style>
+        .container1, .container2 {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .container1 {
+            background-color: lightblue;
+           z-index: 1;
+        }
+
+        .container2 {
+            background-color: lightcoral;
+            transform: scale(1); /* Creates a new stacking context */
+            z-index: 2; /* This only affects elements inside container2 */
+        }
+
+        .box1 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            z-index: 10;
+        }
+
+        .box2 {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box1">Box 1</div>
+    </div>
+    <div class="container2">
+        <div class="box2">Box 2</div>
+    </div>
+</body>
+</html>
