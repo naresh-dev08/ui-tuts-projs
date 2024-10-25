@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equal Height Columns</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .column {
+            background-color: lightblue;
+            padding: 20px;
+            flex: 1; /* All columns take equal width */
+            margin: 10px;
+        }
+
+        .column:nth-child(odd) {
+            background-color: lightcoral;
+        }
+
+        .column:last-child {
+            flex: 2; /* This column takes twice the width */
+        }
+
+        /* Responsive Layout for Smaller Screens */
+        @media (max-width: 768px) {
+            
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2</div>
+        <div class="column">Column 3</div>
+    </div>
+</body>
+</html>
