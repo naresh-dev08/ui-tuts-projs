@@ -22,6 +22,37 @@
             padding: 10px;
             text-align: center;
         }
+
+        .main-content {
+            display: flex;
+            flex: 1; /* Fills the remaining space between header and footer */
+        }
+
+        .sidebar {
+            background-color: lightgray;
+            padding: 20px;
+            width: 200px;
+        }
+
+        .content {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        /* Responsive Layout for Smaller Screens */
+        @media (max-width: 768px) {
+            
+            .main-content {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -31,7 +62,7 @@
         </header>
 
         <div class="main-content">
-            <div class="Sidebar">Left Sidebar</div>
+            <div class="sidebar">Left Sidebar</div>
             <div class="content">Main Content</div>
             <div class="sidebar">Right Sidebar</div>
         </div>
